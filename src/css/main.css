@@ -170,6 +170,17 @@ h4 {
 }
 
 @media (max-width: 993px) {
+  .header {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .section__title {
+    font-size: 18px;
+  }
+  .section-info {
+    font-size: 15px;
+    width: 100%;
+  }
   body {
     background-image: url(../img/cover-image.png);
     background-position-x: center;
@@ -183,6 +194,13 @@ h4 {
 }
 
 @media (max-width: 768px) {
+  .section__title {
+    font-size: 18px;
+  }
+  .section-info {
+    font-size: 14px;
+    width: 100%;
+  }
   .buttons {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -197,6 +215,13 @@ h4 {
 }
 
 @media (max-width: 548px) {
+  .section__title {
+    font-size: 18px;
+  }
+  .section-info {
+    font-size: 12px;
+    width: 100%;
+  }
   body {
     background-image: url(../img/cover-image.png);
     background-position-x: center;
@@ -215,17 +240,6 @@ h4 {
 }
 
 @media (max-width: 350px) {
-  .header {
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
-  .section__title {
-    font-size: 18px;
-  }
-  .section-info {
-    font-size: 12px;
-    width: 100%;
-  }
   body {
     background-image: url(../img/cover-image.png);
     background-position-x: center;
