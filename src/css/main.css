@@ -195,4 +195,42 @@ h4 {
     display: block;
   }
 }
+
+@media (max-width: 548px) {
+  body {
+    background-image: url(../img/cover-image.png);
+    background-position-x: center;
+    background-position-y: 540px;
+    background-size: 60%;
+  }
+  .section {
+    margin-top: 0px;
+  }
+  .section__img {
+    width: 99%;
+  }
+  .section__title {
+    margin-bottom: 15px;
+  }
+}
+
+@media (max-width: 350px) {
+  .header {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .section__title {
+    font-size: 18px;
+  }
+  .section-info {
+    font-size: 12px;
+    width: 100%;
+  }
+  body {
+    background-image: url(../img/cover-image.png);
+    background-position-x: center;
+    background-position-y: 380px;
+    background-size: 50%;
+  }
+}
 /*# sourceMappingURL=main.css.map */
