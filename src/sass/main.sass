@@ -8,7 +8,7 @@ body
     background: #010202 no-repeat
     background-image: url(../img/cover-image.png)
     background-position-x: 1100px
-    background-position-y: 120px
+    background-position-y: 10px
 
 h4
     font-family: sans-serif
@@ -20,8 +20,6 @@ h4
         justify-content: space-between
 .username
     font-family: Source Sans Pro
-    font-style: normal
-    font-weight: normal
     font-family: sans-serif
     color: white
     font-size: 16px
@@ -31,11 +29,16 @@ h4
     width: 40px
     height: 40px
     border-radius: 50%
-
-
+.film
+    margin-right: auto
+    margin-left: auto
+    // padding: 195px 400px
+    // background: url(../img/wrap.jpg) no-repeat center
+.play-button
+    width: 70%
 .section
     width: 50%
-    margin-top: 250px
+    margin-top: 150px
     &-info
         margin-top: 18px
         display: flex
@@ -53,16 +56,28 @@ h4
             padding-right: 2px
             padding-left: 2px
     &__title
+        font-size: 22px
+        line-height: 140%
         margin-bottom: 36px
     &__preorder
         padding: 10px 25px 12px 25px
         background: #EA6E20
         color: white
+        &:hover
+            background: white
+            color: #ea6e20
     &__trailer
         margin-left: 15px
         background: #2F2F2F
         color: white
         padding: 10px 25px 12px 25px
+        display: flex
+        align-items: center
+        &:hover
+            background-color: white
+            color: #2f2f2f
+            path
+                fill: #2f2f2f
     &__mtrailer
         margin-left: 15px
         background: #2F2F2F
@@ -70,8 +85,10 @@ h4
         padding: 11px 10px 11px 25px
         display: none
 .button
+    &s
+        display: flex
     &__arrow
-        margin-right: 15px
+        margin-right: 7px
 
 
 
@@ -150,11 +167,13 @@ h4
             width: 100%
     .buttons
         display: flex
-    .section
-        &__trailer
+    .button
+        &__arrow
+            margin-right: 0px
+        &__text
             display: none
-        &__mtrailer
-            display: block
+    .film
+        padding: 155px 300px
 @media (max-width: 548px)
     .section
         &__title
@@ -166,7 +185,7 @@ h4
     body
         background-image: url(../img/cover-image.png)
         background-position-x: center
-        background-position-y: 540px
+        background-position-y: 450px
         background-size: 60%
     .section
         margin-top: 0px
@@ -179,5 +198,5 @@ h4
     body
         background-image: url(../img/cover-image.png)
         background-position-x: center
-        background-position-y: 380px
+        background-position-y: 420px
         background-size: 50%

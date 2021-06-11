@@ -8,7 +8,7 @@ body {
   background: #010202 no-repeat;
   background-image: url(../img/cover-image.png);
   background-position-x: 1100px;
-  background-position-y: 120px;
+  background-position-y: 10px;
 }
 
 h4 {
@@ -31,8 +31,6 @@ h4 {
 
 .username {
   font-family: Source Sans Pro;
-  font-style: normal;
-  font-weight: normal;
   font-family: sans-serif;
   color: white;
   font-size: 16px;
@@ -46,9 +44,18 @@ h4 {
   border-radius: 50%;
 }
 
+.film {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.play-button {
+  width: 70%;
+}
+
 .section {
   width: 50%;
-  margin-top: 250px;
+  margin-top: 150px;
 }
 
 .section-info {
@@ -77,6 +84,8 @@ h4 {
 }
 
 .section__title {
+  font-size: 22px;
+  line-height: 140%;
   margin-bottom: 36px;
 }
 
@@ -86,11 +95,31 @@ h4 {
   color: white;
 }
 
+.section__preorder:hover {
+  background: white;
+  color: #ea6e20;
+}
+
 .section__trailer {
   margin-left: 15px;
   background: #2F2F2F;
   color: white;
   padding: 10px 25px 12px 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section__trailer:hover {
+  background-color: white;
+  color: #2f2f2f;
+}
+
+.section__trailer:hover path {
+  fill: #2f2f2f;
 }
 
 .section__mtrailer {
@@ -101,8 +130,14 @@ h4 {
   display: none;
 }
 
+.buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .button__arrow {
-  margin-right: 15px;
+  margin-right: 7px;
 }
 
 @media (max-width: 1900px) {
@@ -206,11 +241,14 @@ h4 {
     display: -ms-flexbox;
     display: flex;
   }
-  .section__trailer {
+  .button__arrow {
+    margin-right: 0px;
+  }
+  .button__text {
     display: none;
   }
-  .section__mtrailer {
-    display: block;
+  .film {
+    padding: 155px 300px;
   }
 }
 
@@ -225,7 +263,7 @@ h4 {
   body {
     background-image: url(../img/cover-image.png);
     background-position-x: center;
-    background-position-y: 540px;
+    background-position-y: 450px;
     background-size: 60%;
   }
   .section {
@@ -243,7 +281,7 @@ h4 {
   body {
     background-image: url(../img/cover-image.png);
     background-position-x: center;
-    background-position-y: 380px;
+    background-position-y: 420px;
     background-size: 50%;
   }
 }

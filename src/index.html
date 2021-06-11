@@ -7,6 +7,7 @@
     <title>Mortal Kombat - премьера фильма 2021</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css">
     <link rel="stylesheet" href="css/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
     
@@ -37,14 +38,45 @@
                 </div>
                 <h4 class="section__title">Продолжение легендарного фильма из 90-х. Предстоит по-настоящему смертельная <br>битва, где останется только сильнейший</h4>
                 <div class="buttons">
-                    <button class="button btn section__preorder">Предзаказ фильма</button>
-                    <button class="button btn section__trailer"><img src="img/Vector.png" class="button__arrow" alt="">Смотреть трейлер</button>
-                    <button class="button btn section__mtrailer"><img src="img/Vector.png" class="button__arrow" alt=""></button>
+                    <button class="button btn section__preorder" data-toggle="modal" data-target="#exampleModal">Предзаказ фильма</button>
+                    <button class="button btn section__trailer" data-fancybox data-width="1366" data-height="768" href="https://www.youtube.com/watch?v=fb1BF9B1MGQ&ab_channel=iVideos">
+                        <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="button__arrow">
+                            <path class="path" d="M2.17411 0.293648C0.973433 -0.395078 0 0.169135 0 1.55285V11.764C0 13.1491 0.973433 13.7126 2.17411 13.0245L11.0992 7.90605C12.3003 7.21708 12.3003 6.10084 11.0992 5.41204L2.17411 0.293648Z" fill="white"/>
+                        </svg>
+                        <span class="button__text">Смотреть трейлер</span>
+                    </button>
                 </div>
             </div>
         </div>
     </section>
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centere modal-ьв" role="document">
+            <div class="modal-content" style="background-color: #2f2f2f;">
+                <div class="modal-header" style="border: 0">
+                    <h5 class="modal-title" style="color: white" id="exampleModalLabel">Ты чего так поздно? Фильм уже давно вышел!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" style="color: white">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body mr-auto ml-auto">
+                    <div class="film">
+                        <a href="https://gr.lordfiilm.fans/40410-mortal-kombat-2021.html" class="link">Смотреть полностью</a>
+                    </div>
+                </div>
+                <div class="modal-footer" style="border: 0">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="js/jquery.fancybox.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
+
+
+
+
+<!-- доделывал модальное окно, хотел туда добавить кнопку смотреть полностью и заявить, что я это доделвл -->
